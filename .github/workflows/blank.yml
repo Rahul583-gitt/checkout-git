@@ -11,7 +11,7 @@ jobs:
     steps:
         - run: echo "Hello this is test"
   deploy:
-    needs: test
+      needs: test
       runs-on: ubuntu-latest
       steps:
         - run: echo "Hello this is deploy"
